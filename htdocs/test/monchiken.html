@@ -1,0 +1,185 @@
+		glhdnjsrkdlq.html
+        
+        <div class="person mt30" id="individual_form">
+			<h2 class="pb5"><strong> 선생님 개인정보 입력 </strong></h2>
+			<div class="registWrap mt10">
+				<table>
+				<caption><span class="skip">개인회원정보 입력폼</span></caption>
+				<colgroup><col width="214px"><col width="*"></colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"> 
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >회원아이디</label>
+						</th>
+						<td>
+							<input type="text" maxlength="16" class="ipText" style="width:200px;ime-mode:disabled;" id="mb_id" name="mb_id" MINVAL="5" MAXVAL="16" required hname="아이디">
+							<a class="button" onclick="mbID_duplicateCheck();"><span>아이디 중복 확인</span></a>
+							<em class="help">* 5~16자 사이의 영문 또는 숫자를 포함</em>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"> 
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >비밀번호</label>
+						</th>
+						<td>
+							<input type="password" class="ipText" style="width:200px;" maxlength="16" id="mb_password" name="mb_password" required hname="비밀번호" option="userpw">
+							<em class="help">* 7~16자 사이의 영문 또는 숫자를 포함</em>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"> 
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >비밀번호확인</label>
+						</th>
+						<td>
+							<input type="password" class="ipText checkPwd" style="width:200px;" maxlength="16" id="mb_password_re" name="mb_password_re" required hname="비밀번호확인" option="userpw" matching="mb_password">
+							<em class="help">* 비밀번호를 한번 더 입력해 주십시오.</em>
+						</td>
+					</tr>
+										<tr>
+						<th scope="row"> 
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >이름</label>
+						</th>
+						<td>
+							<input type="text" maxlength="16" class="ipText" style="width:200px;ime-mode:active;" id="mb_name" name="mb_name" required hname="이름">
+						</td>
+					</tr>
+					
+					<tr>
+						<th scope="row">
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >생년/성별</label>
+						</th>
+						<td>
+							<select title="년도선택" class="ipSelect" name="mb_birth_year" id="mb_birth_year" style="width:80px" required hname="생년">
+							<option value="">년도</option>
+															<option value='2006'>2006</option>
+															<option value='2005'>2005</option>
+															<option value='2004'>2004</option>
+															<option value='2003'>2003</option>
+															<option value='2002'>2002</option>
+															<option value='2001'>2001</option>
+															<option value='2000'>2000</option>
+															<option value='1999'>1999</option>
+															<option value='1998'>1998</option>
+															<option value='1997'>1997</option>
+															<option value='1996'>1996</option>
+															<option value='1995'>1995</option>
+															<option value='1994'>1994</option>
+															<option value='1993'>1993</option>
+															<option value='1992'>1992</option>
+															<option value='1991'>1991</option>
+															<option value='1990'>1990</option>
+															<option value='1989'>1989</option>
+															<option value='1988'>1988</option>
+															<option value='1987'>1987</option>
+															<option value='1986'>1986</option>
+															<option value='1985'>1985</option>
+															<option value='1984'>1984</option>
+															<option value='1983'>1983</option>
+															<option value='1982'>1982</option>
+															<option value='1981'>1981</option>
+															<option value='1980'>1980</option>
+														</select> 년 
+							<!--
+							<select title="월 선택" class="ipSelect" name="mb_birth_month" id="mb_birth_month" style="width:59px" required hname="생월">
+							<option value="">월</option>
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														</select> 월 
+							<select title="일 선택" class="ipSelect" name="mb_birth_day" id="mb_birth_day" style="width:59px" required hname="생일">
+							<option value="">일</option>
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+														<option value="21">21</option>
+														<option value="22">22</option>
+														<option value="23">23</option>
+														<option value="24">24</option>
+														<option value="25">25</option>
+														<option value="26">26</option>
+														<option value="27">27</option>
+														<option value="28">28</option>
+														<option value="29">29</option>
+														<option value="30">30</option>
+														<option value="31">31</option>
+														</select> 일 
+							-->
+							/
+							<input type="radio" value="0" name="mb_gender" id="mb_gender_0" required hname="성별">
+							<label for="mb_gender_0">남</label>
+							<input type="radio" value="1" name="mb_gender" id="mb_gender_1" required hname="성별">
+							<label for="mb_gender_1">여</label>
+						</td>
+					</tr>
+										<!-- <tr>
+						<th scope="row"> 
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >닉네임</label>
+						</th>
+						<td>
+							<input type="text" maxlength="16" class="ipText" style="width:200px;ime-mode:active;" id="mb_nick" name="mb_nick" required hname="닉네임">
+							<a class="button" onclick="mbNICK_duplicateCheck();"><span>닉네임 중복 확인</span></a>
+							<em class="help">* 커뮤니티(게시판)등 익명성이 필요한 곳에서 사용됩니다.</em>
+						</td>
+					</tr> -->
+					<tr>
+						<th scope="row" class="vt">
+							<label><img alt="필수입력사항" src="../images/icon/icon_b.gif" >휴대폰</label>
+						</th>
+						<td class="contact">
+							<div class="telWrap">
+								<!-- <div class="tel">
+									<label>전화번호</label>
+									<select class="ipSelect" style="width:111px;" id="mb_phone0" name="mb_phone[]" title="지역번호 선택" required hname="지역번호">
+									<option value="">지역번호 선택</option>
+									<option value='02' >서울 (02)</option><option value='031' >경기 (031)</option><option value='032' >인천 (032)</option><option value='033' >강원 (033)</option><option value='041' >충남 (041)</option><option value='042' >대전 (042)</option><option value='043' >충북 (043)</option><option value='044' >세종 (044)</option><option value='051' >부산 (051)</option><option value='052' >울산 (052)</option><option value='053' >대구 (053)</option><option value='054' >경북 (054)</option><option value='055' >경남 (055)</option><option value='061' >전남 (061)</option><option value='062' >광주 (062)</option><option value='063' >전북 (063)</option><option value='064' >제주 (064)</option><option value='060' >인터넷 (060)</option><option value='070' >인터넷 (070)</option><option value='080' >인터넷 (080)</option><option value='0502' >평생번호(0502)</option>									</select>
+									<span class="delimiter">-</span>
+									<input type="text" class="ipText" title="전화번호 앞자리" maxlength="4" id="mb_phone1" name="mb_phone[]" required hname="전화번호 앞자리">
+									<span class="delimiter">-</span>
+									<input type="text" class="ipText" title="전화번호 뒷자리" maxlength="4" id="mb_phone2" name="mb_phone[]" required hname="전화번호 뒷자리">
+								</div> -->
+								<div class="mobile mt2">
+									<select class="ipSelect" style="width:111px;" id="mb_hphone0" name="mb_hphone[]" title="휴대폰 국번">
+									<option value="">국번</option>
+									<option value='010' >010</option><option value='011' >011</option><option value='016' >016</option><option value='017' >017</option><option value='018' >018</option><option value='019' >019</option>									</select>
+									<span class="delimiter">-</span>
+									<input type="text" class="ipText" title="휴대폰 앞자리" maxlength="4" id="mb_hphone1" name="mb_hphone[]" required hname="휴대폰 앞자리" value="">
+									<span class="delimiter">-</span>
+									<input type="text" class="ipText" title="휴대폰 뒷자리" maxlength="4" id="mb_hphone2" name="mb_hphone[]" required hname="휴대폰 뒷자리" value="">
+									<a class="button" id="send_check_sms" onclick="mbPhone_check();"><span>인증하기</span></a>
+								</div>
+								<div class="mt5">
+									<input id="check_num" type="text" class="ipText" title="인증번호" > <a class="button" onclick="mbPhone_check_num();"><span>확인</span></a>
+									<p id="msg_check_num" class="mt5"></p>
+								</div>
+							</div>
+														<p>
+								<input type="checkbox" class="typeCheckbox" id="mb_receive_sms" name="mb_receive[]" value="sms" checked>
+								<label>레슨정보와 구인정보가 발송됩니다.</label>
+							</p>
+								

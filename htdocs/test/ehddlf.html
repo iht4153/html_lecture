@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YouTube</title>
+</head>
+<!-- 유튜브 body 정리 -->
+<!-- body 태그 id="ltr" 이 아니고 dir 속성으로 한 이유는? -->
+<body dir="ltr">
+    <!-- script 태그가 body 안에서 시작하자마자 하는 이유는? 속성: nonce의 의미는? -->
+	<script nonce=""></script>
+	<!-- ytd 시작하는 태그가 있는데 유튜브전용 태그인가? -->
+	<ytd-app> <!-- ★div 태그의 id=content안에 모든 화면 구성이 들어가있음-->
+	<div id="content" class="style-scope ytd-app">
+		<!-- 화면의 상단 부분을 담당하는 div태그 ( 메뉴 / 로고 / 검색창 / 버튼 / 마이크 / youtube앱 버튼 / 설정 / 로그인 ) 이 포함 되있음 -->
+		<div id="mashread-container">
+			<ytd-masthead id="masthead">
+			<div id="ticker"></div>
+			<div id="interstitial"></div>
+			<!-- ★실질적인 상단 container -->
+			<div id="container">
+				<!-- ★메뉴 / 로고 -->
+				<div id="start">
+					<button id="button" aria-label="가이드" aria-pressed="false"></button>
+					<a id="logo" href="/" title="YouTube 홈"> </a>
+					<!-- 로고 옆에 country 표시는 span 태그로 -->
+					<span id="country-code">KR</span>
+				</div>
+
+				<!-- ★검색 / 버튼 / 마이크 -->
+				<div id="center">
+					<!-- ★form 태그 -->
+					<form id="search-form" action="/results"
+						class="style-scope ytd-searchbox">
+						<!-- id가 중복이 되게 만들어 놨음... id는 고유하게 만들어놓는데, 이유가 뭘까? -->
+						<div id="container">
+							<!-- ★입력창 slot 속성의 의미는? -->
+							<div id="search-input" slot="search-input">
+
+								<!-- 입력창의 가상 키보드  -->
+								<div class="gsst_a">
+									<a class="gsst_a" href="javascript::void(0)"> <span>
+											<img src="" tia_field_name="search_query"
+											tia_disable_swap="true" tia_propery="youtube">
+									</span>
+									</a>
+								</div>
+
+								<!-- ★input 태그 -->
+								<div class="sbib_b">
+									<input id="search" autocapitalize="none" autocomplete="off"
+										autocorrect="off" name="search_query" tabindex="0" type="text"
+										spellcheck="false" placeholder="검색" aria-label="검색"
+										aria-haspopup="false" role="combobox" aria-autocomplete="list"
+										class="gsfi ytd-searchbox" dir="ltr"
+										style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; outline: none;">
+								</div>
+							</div>
+							<!-- 마이크 -->
+							<div id="voice-search-button">
+								<a tabindex="-1">
+									<button id="button" aria-label="마이크으로 검색" aria-pressed="false">
+									</button>
+								</a>
+
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+				<!-- youtube앱 버튼 / 설정 / 로그인 -->
+				<div id="end"></div>
+			</div>
+			</ytd-masthead>
+
+		</div>
+	</div>
+	</ytd-app>
+</body>
+</html>
